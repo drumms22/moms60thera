@@ -11,8 +11,14 @@ const Home = () => {
     const [inv, setInv] = React.useState(null);
     const [isLoaded, setIsLoaded] = React.useState(false);
 
+
+    console.log(inv);
+    //http://localhost:3001
+    const apiUrl = "https://moms60thera-bff-production.up.railway.app";
+    
+
     const getInv = (invId) => {
-            axios.get(`http://localhost:3001/inv/${invId}`)
+            axios.get(`${apiUrl}/inv/${invId}`)
             .then((response) => {
                 if(response.data.isValid){
                     setInv(response.data.data);

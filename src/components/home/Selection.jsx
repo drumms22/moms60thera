@@ -18,6 +18,8 @@ const Selection = ({
 }) => {
 
     console.log(inv);
+    //http://localhost:3001
+    const apiUrl = "https://moms60thera-bff-production.up.railway.app";
     
 
     const [userSelections, setUserSelections] = React.useState(inv) ;
@@ -60,7 +62,7 @@ const Selection = ({
 
     const updateInv = () => {
         setIsUpdating(true);
-        axios.post(`http://localhost:3001/inv/update`, {
+        axios.post(`${apiUrl}/inv/update`, {
             inv: userSelections
         }, {
             headers: {
