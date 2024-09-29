@@ -3,7 +3,7 @@ import './App.css';
 import './app.mobile.css';
 import './app.transitions.css';
 import Home from './pages/Home';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
