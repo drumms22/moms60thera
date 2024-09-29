@@ -18,6 +18,8 @@ const Home = () => {
     
 
     const getInv = (invId) => {
+        console.log(invId);
+        
             axios.get(`${apiUrl}/inv/${invId}`)
             .then((response) => {
                 if(response.data.isValid){
@@ -37,8 +39,11 @@ const Home = () => {
 
     // Use `useEffect` to handle side effects like fetching data
     React.useEffect(() => {
+        
         if(!isLoaded){
+            console.log("id", id);
             if (id) {
+
                 getInv(id); // Fetch invitation data based on "id"
             } else {
                 setIsLoaded(true);
