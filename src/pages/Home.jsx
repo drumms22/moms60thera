@@ -39,9 +39,9 @@ const Home = () => {
 
     // Use `useEffect` to handle side effects like fetching data
     React.useEffect(() => {
-        
+        console.log("id1: ", id);
         if(!isLoaded){
-            console.log("id", id);
+            console.log("id2: ", id);
             if (id) {
 
                 getInv(id); // Fetch invitation data based on "id"
