@@ -1,7 +1,7 @@
 /* Extra small devices (phones, portrait) */
 @media (max-width: 575.98px) {
-    .selection {
-        width: 98%;
+    .selection, .event-wrapper {
+        width: 93%;
     } 
     .about {
         width: 90%;
@@ -12,6 +12,7 @@
     .count-input {
         width: 80px;
     }
+    
 }
 
 /* Small devices (phones, landscape) */
