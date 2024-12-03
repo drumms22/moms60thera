@@ -17,7 +17,7 @@ const Admin = () => {
     const navigate = useNavigate();
     //http://localhost:3001
     //https://moms60thera-bff-production.up.railway.app
-    const apiUrl = "https://moms60thera-bff-production.up.railway.app";
+    const apiUrl = "htttps://moms60thera-bff-production.up.railway.app";
     
 
     const getEvent = (invId) => {
@@ -30,7 +30,7 @@ const Admin = () => {
                     const newEvent = {
                         ...response.data.data
                     }
-                    console.log(newEvent);
+                    console.log("New Even: ", newEvent);
                     setEvent(newEvent.event);
                     setInv(newEvent.invitations)
                 }else{
@@ -100,6 +100,7 @@ const Admin = () => {
                                 yesCount={event.yesCount}
                                 noCount={event.noCount}
                                 maybeCount={event.maybeCount}
+                                onUpdate={(data) => setInv(data)} 
                             />
                         </>
                     ) 

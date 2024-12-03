@@ -382,7 +382,7 @@ html, body {
 
 .alert {
   position: absolute;
-  z-index: 9;
+  z-index: 999;
   top: 10;
   left: 40;
   padding: 15px;
@@ -450,12 +450,101 @@ html, body {
   font-size: 16px;
 }
 
+.add-invite-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+  border-radius: 20px;
+}
+
+.add-invite {
+  width: 95%;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 2.5%;
+  background-color: rgb(255, 12, 206);
+  height: 60px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 99;
+}
+.add-invite-row {
+  display: flex;
+  align-items: center;
+}
+.add-invite-row-2 {
+  display: flex;
+  align-items: center;
+}
+.add-invite-input-name {
+  height: 25px;
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin-left: 3px;
+}
+.add-item-input {
+  height: 25px;
+  margin-left: 3px;
+}
+.add-invite-btn-2 {
+  width: 60px;
+  height: 30px;
+  background-color: #1d1d1d;
+  color: #fff;
+  border: 1px solid #000;
+  transition: .25s;
+  border-radius: 3px;
+}
+.add-invite-btn-2:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.invite-section {
+  position: relative;
+}
+.delete-invite-btn {
+  width: 23px;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  background-color: #ff2c2c;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #ff2c2c;
+  border-radius: 3px;
+}
+.delete-invite-btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.delete-invite-btn-2 {
+  width: 23px;
+  top: 36px;
+  position: absolute;
+  left: -10px;
+  background-color: #ff2c2c;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #ff2c2c;
+  border-radius: 3px;
+  opacity: .7;
+}
 .yes-text {
   color: #78ff47 !important;
 }
 .no-text {
   color: #ff1f1f !important;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
